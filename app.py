@@ -8,16 +8,16 @@ st.set_page_config("Visitor Feedback", layout="centered")
 st.title("📋 Visitor Feedback Form")
 
 with st.form("feedback_form"):
-    st.subheader("🟢 Entry Details")
+    st.subheader("Entry Details")
     name = st.text_input("Name")
     contact = st.text_input("Contact Number")
     purpose = st.text_area("Purpose of Visit")
 
-    st.subheader("🔵 Exit Feedback")
+    st.subheader("Exit Feedback")
     mobile = st.text_input("Registered Mobile Number")
     feedback = st.text_area("Feedback")
 
-    st.subheader("📅 Report Filter")
+    st.subheader("Report Filter")
     report_date = st.date_input("Report Date", value=date.today())
 
     submitted = st.form_submit_button("Submit")
